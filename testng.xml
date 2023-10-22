@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/javabasic/Web_Automation_POM">
+        <classes>
+            <class name="testcases.TestDemoLoginPage">
+                <methods>
+                    <include name="testLoginWithValidData"/>
+                    <include name="testWithInvalidData"/>
+                </methods>
+            </class>
+            <class name="testcases.TestHomePage">
+                <methods>
+                    <include name="testHomePageTittle"/>
+                    <include name="testHomePageURL"/>
+                    <include name="testHomePageRegistrationButton"/>
+                </methods>
+            </class>
+            <class name="testcases.TestRegistrationPage">
+                <methods>
+                    <include name="testRegistrationProcess"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
